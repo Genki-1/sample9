@@ -13,7 +13,6 @@
 
   <div class="container">
     <div id="img_unit">
-
     </div>
   </div>
 
@@ -25,7 +24,12 @@
         "caption": "コメント1"
       }
     ];
-    alert(images[0].caption);
+
+    var img;
+    img = document.createElement('img');
+    img.setAttribute('src, images[0].path');
+
+    document.getElementById('img_unit').appendChild(img);
 
   </script>
 
