@@ -26,8 +26,15 @@
     ];
 
     var img;
+    var caption;
     img = document.createElement('img');
     img.setAttribute('src, images[0].path');
+
+    caption = document.createElement('div');
+    caption.className = 'inner';
+    caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span></p>';
+
+    
 
     document.getElementById('img_unit').appendChild(img);
 
