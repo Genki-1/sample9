@@ -27,34 +27,24 @@
 
     var img;
     var caption;
-    img = document.createElement('img');
-    img.setAttribute('src, images[0].path');
+    var div;
 
-    caption = document.createElement('div');
-    caption.className = 'inner';
-    caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span></p>';
+    for (var i=0; i<images.length; i++) {
+      img = document.createElement('img');
+      img.setAttribute('src, images[0].path');
 
-      div = document.createElement('div');
-      div.className = 'photo';
-      div.appendChild(img);
-      div.appendChild(caption);
+      caption = document.createElement('div');
+      caption.className = 'inner';
+      caption.innerHTML = '<p>' + images[0].caption + '<span>' + images[0].name + '</span></p>';
 
-    document.getElementById('img_unit').appendChild(img);
+        div = document.createElement('div');
+        div.className = 'photo';
+        div.appendChild(img);
+        div.appendChild(caption);
 
+      document.getElementById('img_unit').appendChild(img);
+    }
 
-    img = document.createElement('img');
-    img.setAttribute('src, images[1].path');
-
-    caption = document.createElement('div');
-    caption.className = 'inner';
-    caption.innerHTML = '<p>' + images[1].caption + '<span>' + images[1].name + '</span></p>';
-
-      div = document.createElement('div');
-      div.className = 'photo';
-      div.appendChild(img);
-      div.appendChild(caption);
-
-    document.getElementById('img_unit').appendChild(img);
   </script>
 
 </body>
